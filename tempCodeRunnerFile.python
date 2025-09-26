@@ -1,0 +1,10 @@
+import random
+
+N = 1000000
+MAX_VAL = 1000000
+
+with open("data.txt", "w") as f:
+    for i in range(N):
+        f.write(str(random.randint(0, MAX_VAL)))
+        if i != N - 1:
+            f.write(" ")
